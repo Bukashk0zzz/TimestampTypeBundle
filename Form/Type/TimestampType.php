@@ -22,6 +22,10 @@ use Symfony\Component\Form\FormBuilderInterface;
  */
 class TimestampType extends AbstractType
 {
+    /**
+     * @param FormBuilderInterface $builder
+     * @param array                $options
+     */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->addModelTransformer(new TimestampToDateTimeTransformer());

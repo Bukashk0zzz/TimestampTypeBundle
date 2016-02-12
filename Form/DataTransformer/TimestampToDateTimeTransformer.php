@@ -20,7 +20,10 @@ use Symfony\Component\Form\Exception;
  */
 class TimestampToDateTimeTransformer implements DataTransformerInterface
 {
-
+    /**
+     * @param mixed $value
+     * @return int|mixed
+     */
     public function transform($value)
     {
         if ($value instanceof \DateTime) {
@@ -30,6 +33,10 @@ class TimestampToDateTimeTransformer implements DataTransformerInterface
         return $value;
     }
 
+    /**
+     * @param mixed $value
+     * @return \DateTime
+     */
     public function reverseTransform($value)
     {
         return new \DateTime('@'.$value);

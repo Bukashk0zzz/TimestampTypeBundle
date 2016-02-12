@@ -43,7 +43,8 @@ class TimestampTypeTest extends TypeTestCase
         $this->assertForm($form);
     }
 
-    private function assertForm(Form $form) {
+    private function assertForm(Form $form)
+    {
         static::assertTrue($form->isSynchronized());
         static::assertSame((string) $this->time, $form->getViewData());
     }
