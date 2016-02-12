@@ -1,0 +1,9 @@
+parameters:
+    timestamp.type.class: Bukashk0zzz\TimestampTypeBundle\Form\Type\TimestampType
+
+services:
+    timestamp.type:
+        class: "%timestamp.type.class%"
+        arguments: []
+        tags:
+            - { name: form.type, alias: timestamp }
