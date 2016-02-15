@@ -40,7 +40,8 @@ class TimestampToDateTimeTransformer implements DataTransformerInterface
     public function reverseTransform($value)
     {
         if ($value) {
-            return new \DateTime('@'.$value);
+            $date = new \DateTime();
+            return $date->setTimestamp($value);
         }
 
         return null;
