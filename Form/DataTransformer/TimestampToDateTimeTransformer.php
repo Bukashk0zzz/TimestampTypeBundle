@@ -35,10 +35,14 @@ class TimestampToDateTimeTransformer implements DataTransformerInterface
 
     /**
      * @param mixed $value
-     * @return \DateTime
+     * @return \DateTime|null
      */
     public function reverseTransform($value)
     {
-        return new \DateTime('@'.$value);
+        if ($value) {
+            return new \DateTime('@'.$value);
+        }
+
+        return null;
     }
 }

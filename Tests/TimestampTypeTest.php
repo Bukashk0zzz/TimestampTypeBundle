@@ -41,6 +41,10 @@ class TimestampTypeTest extends TypeTestCase
         $form = $this->factory->create(TimestampType::class);
         $form->submit($this->time);
         $this->assertForm($form);
+
+        $form = $this->factory->create(TimestampType::class);
+        $form->submit('');
+        static::assertSame('', $form->getViewData());
     }
 
     private function assertForm(Form $form)
