@@ -41,6 +41,7 @@ class TimestampToDateTimeTransformer implements DataTransformerInterface
     {
         if ($value) {
             $date = new \DateTime();
+
             return $date->setTimestamp($value);
         }
 
