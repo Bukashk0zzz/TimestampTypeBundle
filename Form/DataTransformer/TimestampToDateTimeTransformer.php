@@ -12,7 +12,6 @@
 namespace Bukashk0zzz\TimestampTypeBundle\Form\DataTransformer;
 
 use Symfony\Component\Form\DataTransformerInterface;
-use Symfony\Component\Form\Exception;
 
 /**
  * Class TimestampToDateTimeTransformer
