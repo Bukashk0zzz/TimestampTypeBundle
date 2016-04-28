@@ -43,6 +43,8 @@ class Bukashk0zzzTimestampTypeExtensionTest extends \PHPUnit_Framework_TestCase
 
     /**
      * Test load extension
+     * @throws \LogicException
+     * @throws \Symfony\Component\DependencyInjection\Exception\BadMethodCallException
      */
     public function testLoadExtension()
     {

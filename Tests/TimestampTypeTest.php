@@ -15,7 +15,8 @@ use Bukashk0zzz\TimestampTypeBundle\Form\Type\TimestampType;
 use Symfony\Component\Form\Form;
 use Symfony\Component\Form\Test\TypeTestCase;
 
-/**
+/** @noinspection LongInheritanceChainInspection
+ *
  * Test the TimestampTypeTest
  *
  * @author Denis Golubovskiy <bukashk0zzz@gmail.com>
@@ -29,7 +30,10 @@ class TimestampTypeTest extends TypeTestCase
     protected $time = 641073600;
 
     /**
-     * @test
+     * Test type
+     *
+     * @throws \Symfony\Component\OptionsResolver\Exception\InvalidOptionsException
+     * @throws \Symfony\Component\Form\Exception\AlreadySubmittedException
      */
     public function testType()
     {
