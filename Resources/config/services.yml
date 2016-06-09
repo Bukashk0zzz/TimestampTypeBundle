@@ -3,7 +3,7 @@ parameters:
 
 services:
     timestamp.type:
-        class: "%timestamp.type.class%"
+        class: '%timestamp.type.class%'
         arguments: []
         tags:
             - { name: form.type, alias: timestamp }
