@@ -1,5 +1,4 @@
-<?php
-
+<?php declare(strict_types = 1);
 /*
  * This file is part of the Bukashk0zzzTimestampTypeBundle
  *
@@ -12,22 +11,21 @@
 namespace Bukashk0zzz\TimestampTypeBundle\Tests\DependencyInjection;
 
 use Bukashk0zzz\TimestampTypeBundle\DependencyInjection\Bukashk0zzzTimestampTypeExtension;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
  * Bukashk0zzzTimestampTypeExtensionTest
- *
- * @author Denis Golubovskiy <bukashk0zzz@gmail.com>
  */
-class Bukashk0zzzTimestampTypeExtensionTest extends \PHPUnit_Framework_TestCase
+class Bukashk0zzzTimestampTypeExtensionTest extends TestCase
 {
     /**
-     * @var Bukashk0zzzTimestampTypeExtension $extension Bukashk0zzzTimestampTypeExtension
+     * @var Bukashk0zzzTimestampTypeExtension Bukashk0zzzTimestampTypeExtension
      */
     private $extension;
 
     /**
-     * @var ContainerBuilder $container Container builder
+     * @var ContainerBuilder Container builder
      */
     private $container;
 
@@ -43,10 +41,8 @@ class Bukashk0zzzTimestampTypeExtensionTest extends \PHPUnit_Framework_TestCase
 
     /**
      * Test load extension
-     * @throws \LogicException
-     * @throws \Symfony\Component\DependencyInjection\Exception\BadMethodCallException
      */
-    public function testLoadExtension()
+    public function testLoadExtension(): void
     {
         $this->container->loadFromExtension($this->extension->getAlias());
         $this->container->compile();

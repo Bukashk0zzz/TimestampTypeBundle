@@ -1,5 +1,4 @@
-<?php
-
+<?php declare(strict_types = 1);
 /*
  * This file is part of the Bukashk0zzzTimestampTypeBundle
  *
@@ -15,12 +14,12 @@ use Symfony\Component\Form\DataTransformerInterface;
 
 /**
  * Class TimestampToDateTimeTransformer
- * @author Denis Golubovskiy <bukashk0zzz@gmail.com>
  */
 class TimestampToDateTimeTransformer implements DataTransformerInterface
 {
     /**
      * @param mixed $value
+     *
      * @return int|mixed
      */
     public function transform($value)
@@ -34,9 +33,10 @@ class TimestampToDateTimeTransformer implements DataTransformerInterface
 
     /**
      * @param mixed $value
+     *
      * @return \DateTime|null
      */
-    public function reverseTransform($value)
+    public function reverseTransform($value): ?\DateTime
     {
         if ($value) {
             $date = new \DateTime();

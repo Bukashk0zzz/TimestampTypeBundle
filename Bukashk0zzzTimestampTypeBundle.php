@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 /*
  * This file is part of the Bukashk0zzzTimestampTypeBundle
  *
@@ -14,8 +14,6 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
  * Bukashk0zzzTimestampTypeBundle
- *
- * @author Denis Golubovskiy <bukashk0zzz@gmail.com>
  */
 class Bukashk0zzzTimestampTypeBundle extends Bundle
 {

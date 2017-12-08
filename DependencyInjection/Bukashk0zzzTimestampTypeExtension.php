@@ -1,5 +1,4 @@
-<?php
-
+<?php declare(strict_types = 1);
 /*
  * This file is part of the Bukashk0zzzTimestampTypeBundle
  *
@@ -18,14 +17,11 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
  * This is the class that loads and manages Bukashk0zzzTimestampTypeBundle configuration
- *
- * @author Denis Golubovskiy <bukashk0zzz@gmail.com>
  */
 class Bukashk0zzzTimestampTypeExtension extends Extension
 {
     /**
      * {@inheritdoc}
-     * @throws \Exception
      */
     public function load(array $configs, ContainerBuilder $container)
     {

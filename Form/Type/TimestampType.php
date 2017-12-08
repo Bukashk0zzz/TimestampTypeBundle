@@ -1,5 +1,4 @@
-<?php
-
+<?php declare(strict_types = 1);
 /*
  * This file is part of the Bukashk0zzzTimestampTypeBundle
  *
@@ -18,15 +17,14 @@ use Symfony\Component\Form\FormBuilderInterface;
 
 /**
  * Class TimestampType
- * @author Denis Golubovskiy <bukashk0zzz@gmail.com>
  */
 class TimestampType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
-     * @param array                $options
+     * @param mixed[]              $options
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder->addModelTransformer(new TimestampToDateTimeTransformer());
     }

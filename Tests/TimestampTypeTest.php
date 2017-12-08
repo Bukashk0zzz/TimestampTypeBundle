@@ -1,5 +1,4 @@
-<?php
-
+<?php declare(strict_types = 1);
 /*
  * This file is part of the Bukashk0zzzTimestampTypeBundle
  *
@@ -15,12 +14,8 @@ use Bukashk0zzz\TimestampTypeBundle\Form\Type\TimestampType;
 use Symfony\Component\Form\Form;
 use Symfony\Component\Form\Test\TypeTestCase;
 
-/** @noinspection LongInheritanceChainInspection
- *
+/**
  * Test the TimestampTypeTest
- *
- * @author Denis Golubovskiy <bukashk0zzz@gmail.com>
- *
  */
 class TimestampTypeTest extends TypeTestCase
 {
@@ -31,11 +26,8 @@ class TimestampTypeTest extends TypeTestCase
 
     /**
      * Test type
-     *
-     * @throws \Symfony\Component\OptionsResolver\Exception\InvalidOptionsException
-     * @throws \Symfony\Component\Form\Exception\AlreadySubmittedException
      */
-    public function testType()
+    public function testType(): void
     {
         /** @var Form $form */
         $form = $this->factory->create(TimestampType::class, new \DateTime(), ['data_class' => null]);
@@ -51,7 +43,12 @@ class TimestampTypeTest extends TypeTestCase
         static::assertSame('', $form->getViewData());
     }
 
-    private function assertForm(Form $form)
+    /**
+     * @param Form $form
+     *
+     * @return void
+     */
+    private function assertForm(Form $form): void
     {
         static::assertTrue($form->isSynchronized());
         static::assertSame((string) $this->time, $form->getViewData());
