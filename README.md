@@ -1,4 +1,4 @@
-#Symfony2/Symfony3 TimestampType Bundle
+#Symfony TimestampType Bundle
 
 [![Build Status](https://img.shields.io/scrutinizer/build/g/Bukashk0zzz/TimestampTypeBundle.svg?style=flat-square)](https://travis-ci.org/Bukashk0zzz/TimestampTypeBundle)
 [![Code Coverage](https://img.shields.io/codecov/c/github/Bukashk0zzz/TimestampTypeBundle.svg?style=flat-square)](https://codecov.io/github/Bukashk0zzz/TimestampTypeBundle)
@@ -14,7 +14,7 @@
 About
 -----
 
-A simple Symfony2/Symfony3 bundle that adds timestamp form field type.
+A simple Symfony bundle that adds timestamp form field type.
 
 Installation
 ------------
@@ -23,7 +23,7 @@ Add this to your `composer.json` file:
 
 ```json
 "require": {
-	"bukashk0zzz/timestamptype-bundle": "dev-master",
+	"bukashk0zzz/timestamptype-bundle": "^2.0",
 }
 ```
 
