@@ -1,4 +1,4 @@
-#Symfony TimestampType Bundle
+# Symfony TimestampType Bundle
 
 [![Build Status](https://img.shields.io/scrutinizer/build/g/Bukashk0zzz/TimestampTypeBundle.svg?style=flat-square)](https://travis-ci.org/Bukashk0zzz/TimestampTypeBundle)
 [![Code Coverage](https://img.shields.io/codecov/c/github/Bukashk0zzz/TimestampTypeBundle.svg?style=flat-square)](https://codecov.io/github/Bukashk0zzz/TimestampTypeBundle)
