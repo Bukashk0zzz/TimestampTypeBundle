@@ -1,6 +1,6 @@
 {
     "name": "bukashk0zzz/timestamptype-bundle",
-    "description": "A simple Symfony2/Symfony3 bundle that adds timestamp form field type.",
+    "description": "A simple Symfony bundle that adds timestamp form field type.",
     "keywords": ["bundle", "symfony", "timestamp", "form", "type"],
     "homepage": "https://github.com/bukashk0zzz/TimestampTypeBundle",
     "type": "symfony-bundle",
