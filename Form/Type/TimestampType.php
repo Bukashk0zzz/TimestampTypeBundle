@@ -36,4 +36,12 @@ class TimestampType extends AbstractType
     {
         return IntegerType::class;
     }
+
+    /**
+     * @return string
+     */
+    public function getBlockPrefix(): string
+    {
+        return 'integer';
+    }
 }
