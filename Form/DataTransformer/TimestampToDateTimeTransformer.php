@@ -39,10 +39,10 @@ class TimestampToDateTimeTransformer implements DataTransformerInterface
      */
     public function reverseTransform($value): ?\DateTime
     {
-        if ($value) {
+        if ($value !== null && $value !== '' && \is_scalar($value)) {
             $date = new \DateTime();
 
-            return $date->setTimestamp($value);
+            return $date->setTimestamp((int) $value);
         }
 
         return null;
