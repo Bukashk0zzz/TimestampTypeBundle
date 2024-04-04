@@ -23,7 +23,7 @@ class TimestampToDateTimeTransformer implements DataTransformerInterface
      *
      * @return int|mixed
      */
-    public function transform($value)
+    public function transform(mixed $value): mixed
     {
         if ($value instanceof \DateTime) {
             return $value->getTimestamp();
@@ -37,7 +37,7 @@ class TimestampToDateTimeTransformer implements DataTransformerInterface
      *
      * @return \DateTime|null
      */
-    public function reverseTransform($value): ?\DateTime
+    public function reverseTransform(mixed $value): mixed
     {
         if ($value !== null && $value !== '' && \is_scalar($value)) {
             $date = new \DateTime();
